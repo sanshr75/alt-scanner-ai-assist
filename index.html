@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alt-Scanner Opus Assistant</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional -->
+</head>
+<body>
+    <h1>Enhance Alt-Scanner with Claude Opus 4.5</h1>
+    <div id="input-section">
+        <label for="prompt">Project Context & Request:</label>
+        <textarea id="prompt" rows="10" cols="50" placeholder="Paste your code snippet (e.g., from scoring.py) and describe enhancements, e.g., 'Add MACD-RSI divergence filter to this score_signal function.'"></textarea>
+        <button onclick="generateEnhancement()">Generate Code</button>
+    </div>
+    <div id="output"></div>
+    
+    <!-- Include Puter.js -->
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="script.js"></script> <!-- Your custom JS -->
+</body>
+</html>
